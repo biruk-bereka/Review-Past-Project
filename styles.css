@@ -1,0 +1,54 @@
+* {
+    background-color:cornflowerblue;
+  }
+  body {
+      display: -ms-inline-flexbox;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #main {
+      margin-top: 50px;
+  }
+  
+  
+  #nav-bar {
+      position: fixed;
+      background: rgb(1, 150, 150);
+      width: 100%;
+      height: auto;
+    }
+  ul li {
+    display: inline-flex;
+  }
+  
+  @media (max-width: 100px) {
+      
+      #header {
+        font-size: 100%;
+      }
+    }
+  
+  #features {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+  }
+  #form {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #email {
+    background-color:azure;
+  }
+  
+  
+    #home {
+        text-align: center;
+        height: 50vh;
+    }
+  
+    #contact {
+        height: 50vh;
+    }
