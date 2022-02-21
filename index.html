@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+  </head>
+
+     
+  <hader id="header" class="container">    
+    <nav id="nav-bar" class="navbar navbar-expand-lg navbar-default navbar-fixed-top">
+
+      <div class="container d-flex justify-content-between">
+        <div class="row navbar-header">
+          <img
+          id="header-img"
+          src="data:image/png;base64,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"
+          height="100px"
+          width="100px"
+        >
+        </div>
+          <ul class="navbar-nav">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+           </ul>
+      </div>
+    </nav>
+
+    <div id="home">
+      <h1>Welocme to our product</h1>
+ </div>
+</header>
+
+
+
+
+
+
+  <body>
+       
+      
+       <div id="main" class="container">
+             <div class="jumbtron">
+
+       </div>
+       <div class="flex-container">
+        <div id="home">
+          <h1>Welocme to our product</h1>
+     </div>
+     
+     <div id="about">
+           <h2>This our about us page</h2>
+            
+           <p>
+             We are the number one in the market
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi adipisci vitae tempora! Dolorum voluptatibus explicabo adipisci impedit, vel quia aliquam! Iure, veritatis quidem inventore officiis voluptatibus ex voluptas minima nam. 
+            </p>
+     </div>
+     <div id="contact">
+           <h2>You can find us: </h2>
+           <p>Our email is: xyz@gmail.com</p>
+           <p>our phone is: 09556465135136</p>
+     </div>
+
+     <div id="features" class="embed-responsive embed-responsive-16by9">
+       <h2>This what our product look like: </h2>
+      <iframe id="video" class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+     </div>
+     
+     <form id="form" action="https://www.freecodecamp.org/email-submit" method="post">
+       <input id='email' type="email" placeholder="Enter a valid email address">
+       <input id="submit" type="submit" >
+      </form>
+      </div>
+
+
+       </div>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script  src="js/index.js"></script>
+  </body>
+</html>
